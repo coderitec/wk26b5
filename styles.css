@@ -1,0 +1,79 @@
+section{
+    background: black;
+}
+
+main{
+    background-color: blueviolet;
+}
+
+body{
+    /* background-color: yellow; */
+}
+
+/* styles any p that is inside a section */
+section p{
+    /* color: green; */
+}
+
+/* styles only p that are direct children to a main */
+main > p{
+    /* color: white; */
+}
+
+/* styles any p element */
+p{
+    /* color: blue; */
+}
+
+/* styles the p that is an adjacent sibling to a p  */
+p + p{
+    /* color: violet; */
+}
+
+/* applys to any element that is a direct sibling to a main */
+
+main + *{
+    /* color: coral; */
+}
+
+/* all elements */
+*{
+    color: white;
+}
+
+/* all siblings selection */
+section h2 ~ p {
+    color: green;
+}
+
+/* class selectors */
+
+h2.main{
+    color: mediumturquoise;
+}
+
+.main{
+    color: fuchsia;
+}
+
+.main.sec{
+    color: blue;
+}
+
+table{
+    width: 90%;
+}
+
+tr td{
+    padding: 10px 0;
+}
+
+td:first-of-type{
+    background-color: black;
+}
+th:last-of-type{
+    background-color: yellow;
+}
+tr:nth-of-type(even) th:last-of-type{
+    background-color: green;
+}
